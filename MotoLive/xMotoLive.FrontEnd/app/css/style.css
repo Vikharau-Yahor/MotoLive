@@ -279,6 +279,10 @@ footer i.fa:hover {
   font-size: 20px;
   color: #FE9A2E;
 }
+
+input.size{
+  margin-left: 5px;
+}
 /*
 .wrpProduct input{
 	width: 40px;
