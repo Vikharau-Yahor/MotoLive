@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotoLive.Web", "MotoLive.Web\MotoLive.Web.csproj", "{04E7D7C2-A799-41A4-BFF9-37C83E13065C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04E7D7C2-A799-41A4-BFF9-37C83E13065C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E7D7C2-A799-41A4-BFF9-37C83E13065C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E7D7C2-A799-41A4-BFF9-37C83E13065C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E7D7C2-A799-41A4-BFF9-37C83E13065C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D441AB0-A9E4-4D5B-B184-50C8C303BBF8}
+	EndGlobalSection
+EndGlobal
