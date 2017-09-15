@@ -4,11 +4,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop</title>
+  <link rel="stylesheet" href="css/modalWindow.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
-</head>
+ </head>
 <body>
+<!-- modal window login-->
+<div id="loginRegModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="post" action="" class="login">      
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <p>
+          <label for="login">Логин:</label>
+          <input type="text" name="login" id="login" autofocus>
+        </p>
+        <p>
+          <label for="password">Пароль:</label>
+          <input type="password" name="password" id="password" >
+        </p>
+        <p class="login-submit">
+          <button type="submit" class="login-button">Войти</button>
+        </p>
+        <a href="index.html" class="forgot-password">Забыли пароль?</a>
+        <a href="index.html" class="registration">Регистрация</a>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- modal window search-->
+<div id="search" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form method="post" action="" class="login">      
+         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <p>
+          <label for="login">Поиск</label>
+          <input type="text" name="login" id="login" autofocus>
+        </p>        
+        <p class="login-submit">
+          <button type="submit" class="login-button">Войти</button>
+        </p>        
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
 <!-- start header -->
 	<header class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
@@ -18,7 +62,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html"><span style="color:maroon">M<i class="fa fa-circle-o"></i>T<i class="fa fa-circle-o"></i></span> LIVE</a>
+					<a class="navbar-brand" href="index.html"><span>M<i class="fa fa-circle-o"></i>T<i class="fa fa-circle-o"></i></span> LIVE</a>
       		</div>
       		<nav class="navbar-collapse collapse">
       			<ul class="nav navbar-nav navbar-right">
@@ -26,8 +70,8 @@
       				<li><a href="catalog.html">Каталог</a></li>
       				<li><a href="#">Контакты</a></li>
       				<li><a href="#">Оплата и доставка</a></li>
-      				<li><a href="#">Вход | Регистрация</a></li>
-      				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+      				<li><a href="#loginRegModal" data-toggle="modal">Вход | Регистрация</a></li>
+      				<li><a href="#search" data-toggle="modal"><i class="fa fa-search" aria-hidden="true"></i></a></li>
       			</ul>
       		</nav>
 		</div>
@@ -197,9 +241,11 @@
 				<a href="facebook.com"><i class="fa fa-facebook"></i></a>
 				<a href="vk.com"><i class="fa fa-vk"></i></a>		
 			</div>			
-			<p class="copyRight">Copy right 2017</p>
+			<p class="copyRight">Copyright 2017</p>
 		</div>
 	</footer>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
