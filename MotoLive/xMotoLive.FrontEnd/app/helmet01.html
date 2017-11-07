@@ -43,43 +43,51 @@
 					<img src="img/helmet01-sm.png">
 				</div>
 				<div class="col-lg-6 prod">
-					<div class="field">						
-						<span class="status">В наличии</span>
+					<div class="field">
+						<div class="col-lg-4 label" > </div>
+						<div class="col-lg-8 status">В наличии</div>
 					</div>
 					<div class="field">
-						<span class="col-lg-4 label">Артикул:</span>
-						<span class="col-lg-8">A0019if</span>
+						<div class="col-lg-4 label">Артикул:</div>
+						<div class="col-lg-8">A0019if</div>
 					</div>
-					<div class="field size">
-						<span class="label">Размер:</span>
-						<label><input type="radio" id="1" value="xs" name="size">
+					<div class="field">
+						<div class="col-lg-4 label">Размер:</div>
+						<div class="col-lg-8 sizes">
+							<label><input type="radio" class="size" id="xs" value="xs" name="size">
 								<span>XS</span>
 							</label>
-							<label><input type="radio" id="2" value="s" name="size">
+							<label><input type="radio" class="size" id="s" value="s" name="size">
 								<span>S</span>
 							</label>
-							<label><input type="radio" id="3" value="m" name="size">
+							<label><input type="radio" class="size" id="m" value="m" name="size">
 								<span>M</span>
 							</label>
-							<label><input type="radio" id="4" value="l" name="size">
+							<label><input type="radio" class="size" id="l" value="l" name="size">
 								<span>L</span>
 							</label>
-							<label><input type="radio" id="5" value="xl" name="size">
+							<label><input type="radio" class="size" id="xl" value="xl" name="size">
 								<span>XL</span>
 							</label>
+						</div>
 					</div>
 					<div class="field">
-						<label class="col-lg-4 label">Цена:</label>
-						<span class="col-lg-8">310.00 byn</span>						
+						<div class="col-lg-4 label">Цена:</div>
+						<div class="col-lg-8">330.00 byn</div>
 					</div>
 					<div class="field">
-						<label class="col-lg-4 label">Количество: </label>
-						<input class="col-lg-8 type="text" name="">
+						<form action="#">
+							<div class="col-lg-4 label">Количество:</div>
+							<div class="col-lg-8">
+								<input id="count" type="number" min="1" max="10" value="1">
+							</div>
 					</div>
-					<div class="field">						
-						<a href="#" class="showOne">Купить</a>
+					<div class="field buy">
+						<input type="submit" class="showOne" value="Купить">
 					</div>
+					</form>	
 				</div>
+				<div style="clear: both;"></div>
 				<div class="col-lg-12">
 					<h5>Описание:</h5>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque at delectus totam animi cupiditate corrupti nostrum nobis ad deserunt accusamus illo, perspiciatis assumenda sed praesentium rerum qui quo omnis! Corrupti!

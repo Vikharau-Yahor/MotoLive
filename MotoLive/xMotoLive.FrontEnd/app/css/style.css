@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|PT+Sans|Open Sans|Ubuntu');
+/*@import "for.less";*/
+/*CC0505*/
 html {
   position: relative;
   min-height: 100%;
@@ -67,7 +69,8 @@ hr {
   border-color: #2d2d2d;
 }
 .navbar-inverse .navbar-nav > .active > a {
-  background: maroon;
+  background: #a52a2a;
+  opacity: 0.75;
 }
 .navbar-inverse .navbar-brand {
   color: #fff;
@@ -75,6 +78,9 @@ hr {
   font-weight: bold;
   font-size: 22px;
   letter-spacing: 1px;
+}
+.navbar-brand span {
+  color: #a52a2a;
 }
 .navbar-inverse .navbar-brand:hover {
   opacity: 1;
@@ -245,11 +251,21 @@ footer i.fa:hover {
   color: #000;
 }
 .showOne {
-  height: 100%;
   color: #fff;
   background: #a52a2a;
-  border-radius: 10px;
+  border-radius: 6px;
+  border: 0;
+}
+.showOne:hover {
+  background: #761E1E;
+  color: #fff;
+}
+a.showOne {
   padding: 10px 12px;
+}
+input.showOne {
+  padding: 6px 12px;
+  margin-left: 8px;
 }
 /*helmets page end*/
 /*product page start*/
@@ -257,62 +273,56 @@ footer i.fa:hover {
   background: #fafafa;
   color: #333;
 }
-.field {
-  clear: both;
-  float: left;
-  text-align: left;
-  line-height: 30px;
-}
-.label {
-  color: #333;
-  font-size: 14px;
-  float: left;
-  padding-top: 8px;
-  padding-left: 10px;
-  padding-right: 30px;
-}
-.prod {
-  float: left;
-}
 .prod .status {
-  padding-top: 40px;
+  padding-top: 20px;
   font-size: 20px;
   color: #FE9A2E;
 }
-/*
-.wrpProduct input{
-	width: 40px;
-	border: 2px solid #FE9A2E;
+.field {
+  clear: both;
+  text-align: left;
+  line-height: 36px;
 }
-
-.size span.lable{	
-    position: relative;
-    display: block;
-    float: left;
+.label {
+  color: #333;
+  font-size: 15px;
+  float: left;
+  text-align: left;
+  padding-top: 8px;
+  padding-right: 30px;
 }
-
-.size label{
-	width: 32px;
-	height: 26px;
-	border: 2px solid #ccc;
-	position: relative;
+.sizes {
+  margin-bottom: -10px;
 }
-input[type="checkbox"] {
-    display:none;
+.sizes label {
+  width: 30px;
+  /* Ширина рисунка */
+  height: 28px;
+  /* Высота рисунка */
+  position: relative;
 }
-
-input[type="checkbox"] + span{
-	position: absolute;
-	left: 0;
-	top: 0;
-	background: url("../img/input.png");
-	
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
+.sizes input[type="radio"] {
+  display: none;
 }
-
-input[type="checkbox"]:checked + span{	
-	background-color: @status_color;
-}*/
+.sizes input[type="radio"] + span {
+  position: absolute;
+  left: -0.3em;
+  top: 0.4em;
+  text-align: center;
+  line-height: 1.4em;
+  background: url("../img/input.png");
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.sizes input[type="radio"]:checked + span {
+  border: 3px solid #FE9A2E;
+  top: 0.2em;
+}
+.wrpProduct input#count {
+  width: 60px;
+  height: 30px;
+  padding-left: 5px;
+  border: 2px solid #FE9A2E;
+}
 /*product page end*/

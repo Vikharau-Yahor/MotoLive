@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|PT+Sans|Open Sans|Ubuntu');
+/*@import "for.less";*/
 
 @main_bg_color: #f2f2f2;
 @wrap_bg_color: #fafafa;
 @status_color: #FE9A2E;
+@brand_color: #a52a2a; /*CC0505*/
 @main_font: Ubuntu, sans-serif;
 @h_font: PT Sans, sans-serif;
 @a_font: Open Sans, sans-serif;
@@ -75,7 +77,8 @@ hr{
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-	background: maroon;
+	background: @brand_color;
+	opacity: 0.75;
 }
 
 .navbar-inverse .navbar-brand {
@@ -86,12 +89,18 @@ hr{
 	letter-spacing: 1px;
 }
 
+.navbar-brand span{
+	color: @brand_color;
+}
+
 .navbar-inverse .navbar-brand:hover {
 	opacity: 1;
 }
 
 
+
 /* end header styles*/
+
 
 /* start wrap styles*/
 #headerwrap{
@@ -269,7 +278,6 @@ footer i.fa:hover{
 	color: #f3f3f3;
 
 }
-
 /*end footer*/
 
 
@@ -296,15 +304,32 @@ footer i.fa:hover{
 	color: #000;
 }
 
-.showOne { 
-height: 100%; 
-color: #fff; 
-background: #a52a2a; 
-border-radius: 10px; 
-padding: 10px 12px; 
+.showOne{
+	color: #fff; 
+	background: @brand_color; 
+	border-radius: 6px; 
+	border: 0;
 }
 
+.showOne:hover{
+	background: #761E1E;
+	color: #fff;
+}
+
+a.showOne {
+	padding: 10px 12px;
+}
+
+
+input.showOne {
+	padding: 6px 12px;
+	margin-left: 8px;
+}
+
+
 /*helmets page end*/
+
+
 
 /*product page start*/
 .wrpProduct {
@@ -312,66 +337,64 @@ padding: 10px 12px;
 	color: #333;
 }
 
-.field{
-	clear: both;
-	float: left;
-	text-align: left;
-	line-height: 30px;
-}
-
-.label{
-	color: #333;
-	font-size: 14px;
-	float: left;
-	padding-top: 8px;
-	padding-left: 10px;
-	padding-right: 30px;
-}
-.prod{
-	float: left;
-}
-
-
 .prod .status{
-	padding-top: 40px;
+	padding-top: 20px;
 	font-size: 20px;
 	color: @status_color;
 }
-/*
-.wrpProduct input{
-	width: 40px;
-	border: 2px solid #FE9A2E;
+
+.field {
+	clear: both;
+	text-align: left;
+	line-height: 36px;
 }
 
-.size span.lable{	
-    position: relative;
-    display: block;
-    float: left;
+
+.label {
+	color: #333;
+	font-size: 15px;
+	float: left;
+	text-align: left;
+	padding-top: 8px;
+	padding-right: 30px;
+}
+.sizes {
+	margin-bottom: -10px; 
 }
 
-.size label{
-	width: 32px;
-	height: 26px;
-	border: 2px solid #ccc;
+.sizes label {
+	width: 30px; /* Ширина рисунка */
+	height: 28px; /* Высота рисунка */
 	position: relative;
 }
-input[type="checkbox"] {
-    display:none;
+
+.sizes input[type="radio"] {
+    display: none;
 }
 
-input[type="checkbox"] + span{
+.sizes input[type="radio"] + span {
 	position: absolute;
-	left: 0;
-	top: 0;
-	background: url("../img/input.png");
-	
+	left: -0.3em;
+	top: 0.4em;
+	text-align: center;
+	line-height: 1.4em;	
+	background: url("../img/input.png");	
 	width: 100%;
 	height: 100%;
 	cursor: pointer;
 }
 
-input[type="checkbox"]:checked + span{	
-	background-color: @status_color;
-}*/
+.sizes input[type="radio"]:checked + span{	
+	border: 3px solid @status_color;
+	top: 0.2em;
+}
+
+
+.wrpProduct input#count{
+	width: 60px;
+	height: 30px;
+	padding-left: 5px;
+	border: 2px solid @status_color;
+}
 
 /*product page end*/
